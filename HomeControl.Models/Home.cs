@@ -14,8 +14,6 @@ namespace HomeControl.Models
         public Home Home { get; set; }
 
         public OccupancyMode Occupancy { get; set; }
-
-        public double DistanceFromHome { get; set; }
     }
 
     public enum OccupancyMode
@@ -56,6 +54,7 @@ namespace HomeControl.Models
         public bool Active { get; set; }
         public decimal TargetTemperature { get; set; }
         public decimal ActualTemperature { get; set; }
+
     }
 
     public class Light : Device
